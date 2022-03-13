@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zilberg Media</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <img class="logo" src="./images/logo.png" />
+            <ul>
+                <li><a href="#home-page"><i class="li"></i>Home</a></li>
+                <li><a href="#gallery-page"><i class="li"></i>Gallery</a></li>
+                <!-- <li><a href="#about-page"><i class="li"></i>About</a></li> -->
+                <li><a href="#contact-page"><i class="li"></i>Contact</a></li>
+                
+            </ul> 
+            <p class="phone">(613)-618-2496</p>
+            <p class="email">zilbergmitchell@gmail.com</p>
+            <div class="social_media">
+              <a href="https://www.linkedin.com/in/mitchell-zilberg/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/channel/UCIcaixYKMzfBv6CKyS-Uqbg" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.instagram.com/zilbergmedia/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="main_content">
+
+            <div id="home-page">
+                <h1 class="home-page-title">Zilberg Media</h1>
+                <div class="down-arrow-instructions">
+                    <h5 class="home-page-text">Stand up photography & videography</h5>
+                    <a href="#gallery-page"><img class="down-arrow" src="./images/down-arrow.png" alt=""></a>
+                    
+                </div>
+                
+
+            </div>
+
+            <div id="gallery-page">
+                <div class="gallery">
+                    <img id="myImg" class="img-1 myImg" src="./images/standup pics/BW/BW.JPG" alt="Peter Saran"/></a>
+                    <img id="myImg" class="img-1 myImg" src="./images/standup pics/BW/BW-2.JPG" alt="Dan Allair"/>
+                    <img id="myImg" class="img-1 myImg" src="./images/standup pics/BW/BW-3.JPG" />
+                    <img id="myImg" class="img-1 myImg" src="./images/standup pics/BW/BW-4.JPG" />
+                    <img id="myImg" class="img-1 myImg" src="./images/standup pics/BW/BW-5.JPG" />
+                    <img id="myImg" class="img-1 myImg" src="./images/standup pics/BW/BW-6.JPG" />
+                    <img id="myImg" class="img-1 myImg" src="./images/standup pics/BW/BW-7.JPG" />
+                    <img id="myImg" class="img-1 myImg" src="./images/standup pics/BW/BW-8.JPG" />
+                    <img id="myImg" class="img-1 myImg" src="./images/standup pics/BW/BW-9.JPG" />
+                </div>
+
+                <div class="modal">
+                    <span class="close">X</span>
+                    <div class="modal-content">
+                        <img src="" class="modal-image">
+                    </div>
+                    <div class="caption"><p>test text</p></div>
+                </div>
+
+            </div>
+
+            <!-- <div id="about-page">
+                <h1 class="about-header">About Me</h1>
+                <p>I'm a multimedia specialist with 8 years of experience. I'm looking to expand my portfolio so I'm willing to work below the market value. </p>
+            </div> -->
+
+            <div id="contact-page">
+                <h1 class="gallery-header">Let's Work Together</h1>
+                <h5 class="text-contact">I make photos and videos.</h5>
+                <p class="email-contact">zilbergmitchell@gmail.com</p>
+                    <!-- <div class="ad">
+                        <h1 class="ad-header">Need a wesbite like this?</h1>
+                    <p class="ad-text">I make my own websites and I can make yours too!</p>
+                    </div> -->
+                    
+                
+            </div>
+            <!-- <div id="blog-page">
+                <h1 class="ad-header">Need a wesbite like this one?</h1>
+                <p>I make my own websites and I can make yours too!</p>
+            </div> -->
+
+        </div>
+        
+    </div>
+
+    <script>
+        const images = document.querySelectorAll(".gallery img");
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector(".modal-image");
+        const caption = document.querySelector(".caption");
+        const close = document.querySelector(".close");
+
+        images.forEach(image => {
+            image.addEventListener("click", () => {
+                modalImg.src = image.src;
+                caption.innerHTML = image.alt;
+                modal.classList.add("appear");
+
+                close.addEventListener("click", () => {
+                    modal.classList.remove("appear");
+                })
+                
+            });
+        });
+    </script>
+
+
+</body>
+</html>
