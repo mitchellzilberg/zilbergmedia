@@ -89,8 +89,17 @@
   }
 
   .email-contact {
-    font-size: 60px;
-    margin-top: 160px;
+    font-size: 20px;
+    margin:15px
+
+  }
+
+  .contact-info {
+    padding:300px;
+  }
+
+  .contact-header {
+    font-size:45px;
   }
 
   .text-contact {
@@ -175,7 +184,8 @@
   }
   #gallery {
       display: grid;
-      grid-template-columns: auto auto auto;
+      /* grid-template-columns: auto auto auto; */
+      grid-template-columns: repeat(auto-fill, minmax(100px, 140px));
   }
 
   .gallery-header {
@@ -217,8 +227,8 @@
     .down-arrow {
         max-width: 100px;
         position: relative;
-        margin-top: 250px;
-        padding-bottom: 20px;
+        margin: 250px;
+        padding:15px;
     }
 
 
