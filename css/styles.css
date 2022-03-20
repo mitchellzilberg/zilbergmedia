@@ -183,8 +183,8 @@
   }
   #gallery {
       display: grid;
-      grid-template-columns: auto auto auto;
-      /* grid-template-columns: repeat(auto-fill, minmax(100px, 140px)); */
+      /* grid-template-columns: auto auto auto;
+     grid-template-columns: repeat(auto-fill, minmax(100px, 140px)); */
   }
 
   .gallery-header {
@@ -204,12 +204,12 @@
 }
 
   .img-1 {
-    /* transition:transform 0.25s ease; */
+    /* transition:transform 0.25s ease; 
     max-height: 260px;
     height:255px;
     min-height:240px;
     width: auto;
-    cursor: pointer;
+    cursor: pointer; */
     }
 
     .home-page-title {
@@ -320,7 +320,7 @@
   }
   .contact-info{
     padding:10px;
-    margin-top:40px;
+    margin-top:100px;
   }
   ul {
     display: none;
@@ -342,12 +342,12 @@
     left:auto;
   }
   .down-arrow{
-    margin-top:150px;
+    margin-top:100px;
   }
   .home-page-title {
     padding-top:220px;
   }
   .img-1 {
-    width:360px;
+    /* width:360px; */
   }
 }
