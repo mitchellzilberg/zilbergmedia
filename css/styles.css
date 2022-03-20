@@ -76,7 +76,7 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-40%);
     display: flex;
   }
 
@@ -346,6 +346,7 @@
   }
   .home-page-title {
     padding-top:220px;
+    margin-top:100px;
   }
   .img-1 {
     /* width:360px; */
